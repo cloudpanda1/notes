@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@300;700&display=swap");
+
+* {
+    margin: 0;
+    text-align: center;
+}
+
+textarea {
+    width: 50%;
+    margin-top: 30px;
+}
+
+button {
+    background-color: lightskyblue;
+    padding: 15px;
+    margin: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+}
+
+button:hover {
+    background-color: #4aaae6;
+}
+
+body {
+    height: 100%;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+#footerText {
+    text-align: center;
+    padding: 3rem;
+
+    font-size: 20px;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+a:link {
+    color: #eb6159;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #f5635b;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e65047;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: #eb6159;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 2fr;
+    grid-template-areas:
+        "title title title title"
+        "input input input input"
+        "list list list list";
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr;
+
+        grid-template-areas:
+            "title"
+            "input"
+            "list";
+    }
+}
+
+.title {
+    grid-area: title;
+    padding-top: 40px;
+    font-family: "Architects Daughter", cursive;
+    font-size: 35px;
+}
+
+.input {
+    grid-area: input;
+}
+
+.list {
+    grid-area: list;
+    height: 100%;
+}
+
+div {
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
